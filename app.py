@@ -24,7 +24,7 @@ api_v1.add_resource(TranslatedTranscript, "/translations")
 app.register_error_handler(InvalidAPIUsage, InvalidAPIUsage)
 app.register_error_handler(TranscriptionError, TranscriptionError)
 
-#TEST
+#TEST##
 # Return JSON instead of HTML for HTTP errors.
 @app.errorhandler(HTTPException)
 @app.errorhandler(InvalidAPIUsage)
